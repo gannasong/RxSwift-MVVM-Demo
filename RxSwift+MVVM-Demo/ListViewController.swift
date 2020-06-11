@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ListViewController.swift
 //  RxSwift+MVVM-Demo
 //
 //  Created by SUNG HAO LIN on 2020/6/11.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ListViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
