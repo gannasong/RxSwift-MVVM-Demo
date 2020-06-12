@@ -18,6 +18,11 @@
 		49E517342492910B00DF99A4 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E517332492910B00DF99A4 /* ListViewModel.swift */; };
 		49E517372492921500DF99A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E517362492921500DF99A4 /* User.swift */; };
 		49E517392492928400DF99A4 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E517382492928400DF99A4 /* ActivityIndicator.swift */; };
+		49F02E822492F4650030731A /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F02E812492F4650030731A /* ListSection.swift */; };
+		49F02E852492F52C0030731A /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F02E842492F52C0030731A /* UserTableViewCell.swift */; };
+		49F02E872492F8B00030731A /* GitHubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F02E862492F8B00030731A /* GitHubError.swift */; };
+		49F02E8A2492F8F30030731A /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F02E892492F8F30030731A /* UIViewController+Alert.swift */; };
+		49F02E8C2492FD6A0030731A /* StaffBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F02E8B2492FD6A0030731A /* StaffBadgeView.swift */; };
 		9A99033593308775E4DA29A3 /* Pods_RxSwift_MVVM_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9534F35A181F9E727D60F3 /* Pods_RxSwift_MVVM_DemoTests.framework */; };
 		BA6B944D658EDBD18DFBD9A3 /* Pods_RxSwift_MVVM_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABD97F568049CAE31AE9DA6 /* Pods_RxSwift_MVVM_Demo.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +55,11 @@
 		49E517332492910B00DF99A4 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		49E517362492921500DF99A4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		49E517382492928400DF99A4 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		49F02E812492F4650030731A /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
+		49F02E842492F52C0030731A /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		49F02E862492F8B00030731A /* GitHubError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubError.swift; sourceTree = "<group>"; };
+		49F02E892492F8F30030731A /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		49F02E8B2492FD6A0030731A /* StaffBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffBadgeView.swift; sourceTree = "<group>"; };
 		71166FB91E6B4D00B91E840B /* Pods-RxSwift+MVVM-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift+MVVM-Demo.release.xcconfig"; path = "Target Support Files/Pods-RxSwift+MVVM-Demo/Pods-RxSwift+MVVM-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		AABD97F568049CAE31AE9DA6 /* Pods_RxSwift_MVVM_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_MVVM_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9534F35A181F9E727D60F3 /* Pods_RxSwift_MVVM_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_MVVM_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +120,9 @@
 		49E517082492898F00DF99A4 /* RxSwift+MVVM-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				49F02E882492F8DC0030731A /* Extension */,
+				49F02E832492F5000030731A /* Views */,
+				49E5173A2492977F00DF99A4 /* ViewControllers */,
 				49E517352492920500DF99A4 /* Model */,
 				49E51732249290F700DF99A4 /* ViewModel */,
 				49E5172F2492903800DF99A4 /* Protocol */,
@@ -117,7 +130,6 @@
 				49E5172B24928E7C00DF99A4 /* Networking */,
 				49E517092492898F00DF99A4 /* AppDelegate.swift */,
 				49E5170B2492898F00DF99A4 /* SceneDelegate.swift */,
-				49E5170D2492898F00DF99A4 /* ListViewController.swift */,
 				49E517122492899200DF99A4 /* Assets.xcassets */,
 				49E517142492899200DF99A4 /* LaunchScreen.storyboard */,
 				49E517172492899200DF99A4 /* Info.plist */,
@@ -170,8 +182,35 @@
 			isa = PBXGroup;
 			children = (
 				49E517362492921500DF99A4 /* User.swift */,
+				49F02E812492F4650030731A /* ListSection.swift */,
+				49F02E862492F8B00030731A /* GitHubError.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		49E5173A2492977F00DF99A4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				49E5170D2492898F00DF99A4 /* ListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		49F02E832492F5000030731A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49F02E842492F52C0030731A /* UserTableViewCell.swift */,
+				49F02E8B2492FD6A0030731A /* StaffBadgeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49F02E882492F8DC0030731A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				49F02E892492F8F30030731A /* UIViewController+Alert.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		F466D6DCBE68F5EBD3D69D0D /* Frameworks */ = {
@@ -368,14 +407,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F02E872492F8B00030731A /* GitHubError.swift in Sources */,
 				49E5170E2492898F00DF99A4 /* ListViewController.swift in Sources */,
 				49E5170A2492898F00DF99A4 /* AppDelegate.swift in Sources */,
+				49F02E8A2492F8F30030731A /* UIViewController+Alert.swift in Sources */,
+				49F02E8C2492FD6A0030731A /* StaffBadgeView.swift in Sources */,
 				49E517342492910B00DF99A4 /* ListViewModel.swift in Sources */,
 				49E5172E24928EC200DF99A4 /* GitHub.swift in Sources */,
+				49F02E852492F52C0030731A /* UserTableViewCell.swift in Sources */,
 				49E517392492928400DF99A4 /* ActivityIndicator.swift in Sources */,
 				49E517312492909E00DF99A4 /* ViewModelType.swift in Sources */,
 				49E5170C2492898F00DF99A4 /* SceneDelegate.swift in Sources */,
 				49E517372492921500DF99A4 /* User.swift in Sources */,
+				49F02E822492F4650030731A /* ListSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
