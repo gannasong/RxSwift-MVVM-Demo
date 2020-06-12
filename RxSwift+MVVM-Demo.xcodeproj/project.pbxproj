@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4982C984249354D5001343C1 /* Stub.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4982C983249354D5001343C1 /* Stub.bundle */; };
 		49E5170A2492898F00DF99A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E517092492898F00DF99A4 /* AppDelegate.swift */; };
 		49E5170C2492898F00DF99A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5170B2492898F00DF99A4 /* SceneDelegate.swift */; };
 		49E5170E2492898F00DF99A4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5170D2492898F00DF99A4 /* ListViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		03CFF2CFB492CA7890FF0AD0 /* Pods-RxSwift+MVVM-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift+MVVM-Demo.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift+MVVM-Demo/Pods-RxSwift+MVVM-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		0CC0AA5550A324CB48AF4D0B /* Pods-RxSwift+MVVM-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift+MVVM-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-RxSwift+MVVM-DemoTests/Pods-RxSwift+MVVM-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		4982C983249354D5001343C1 /* Stub.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Stub.bundle; sourceTree = "<group>"; };
 		49E517062492898F00DF99A4 /* RxSwift+MVVM-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift+MVVM-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E517092492898F00DF99A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49E5170B2492898F00DF99A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				49E517122492899200DF99A4 /* Assets.xcassets */,
 				49E517142492899200DF99A4 /* LaunchScreen.storyboard */,
 				49E517172492899200DF99A4 /* Info.plist */,
+				4982C983249354D5001343C1 /* Stub.bundle */,
 			);
 			path = "RxSwift+MVVM-Demo";
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			files = (
 				49E517162492899200DF99A4 /* LaunchScreen.storyboard in Resources */,
 				49E517132492899200DF99A4 /* Assets.xcassets in Resources */,
+				4982C984249354D5001343C1 /* Stub.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

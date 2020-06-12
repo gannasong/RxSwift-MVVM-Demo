@@ -41,7 +41,7 @@ extension GitHub: TargetType {
   var sampleData: Data {
     switch self {
       case .getUserList:
-      return Data()
+        return stubbedResponse("List")
     }
   }
 
