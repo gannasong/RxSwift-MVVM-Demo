@@ -46,7 +46,7 @@ extension GitHub: TargetType {
       case .getUserList:
         return stubbedResponse("List")
       case .getUserDetail:
-        return stubbedResponse("UserDetail")
+        return stubbedResponse("Detail")
     }
   }
 

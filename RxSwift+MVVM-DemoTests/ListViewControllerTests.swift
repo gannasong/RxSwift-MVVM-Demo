@@ -1,6 +1,6 @@
 //
-//  RxSwift_MVVM_DemoTests.swift
-//  RxSwift+MVVM-DemoTests
+//  ListViewControllerTests.swift
+//  ListViewControllerTests
 //
 //  Created by SUNG HAO LIN on 2020/6/11.
 //  Copyright © 2020 SUNG HAO LIN. All rights reserved.
@@ -15,7 +15,7 @@ import Moya
 
 @testable import RxSwift_MVVM_Demo
 
-class RxSwift_MVVM_DemoTests: XCTestCase {
+class ListViewControllerTests: XCTestCase {
 
   var viewModel: ListViewModel!
   var disposeBag: DisposeBag!
@@ -26,15 +26,13 @@ class RxSwift_MVVM_DemoTests: XCTestCase {
     viewModel = ListViewModel()
     disposeBag = DisposeBag()
     scheduler = TestScheduler(initialClock: 0, resolution: 0.01)
+
     let refreshTrigger = scheduler.createHotObservable([.next(100, ())])
       .asDriver(onErrorJustReturn: ())
-
-
 
     let input = ListViewModel.Input(provider: MoyaProvider<GitHub>(stubClosure: { _ in .immediate }),
                                     refreshTrigger: refreshTrigger,
                                     nextPageSignal: .empty())
-
     output = viewModel.transform(input: input)
   }
 
