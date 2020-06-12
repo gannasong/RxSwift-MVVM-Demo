@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4982C984249354D5001343C1 /* Stub.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4982C983249354D5001343C1 /* Stub.bundle */; };
+		4982C986249360CA001343C1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4982C985249360CA001343C1 /* DetailViewController.swift */; };
+		4982C9882493620A001343C1 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4982C9872493620A001343C1 /* DetailViewModel.swift */; };
+		4982C98A249364B8001343C1 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4982C989249364B8001343C1 /* UserDetail.swift */; };
+		4982C98C24936BC8001343C1 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4982C98B24936BC8001343C1 /* UserDetailView.swift */; };
 		49E5170A2492898F00DF99A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E517092492898F00DF99A4 /* AppDelegate.swift */; };
 		49E5170C2492898F00DF99A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5170B2492898F00DF99A4 /* SceneDelegate.swift */; };
 		49E5170E2492898F00DF99A4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5170D2492898F00DF99A4 /* ListViewController.swift */; };
@@ -42,6 +46,10 @@
 		03CFF2CFB492CA7890FF0AD0 /* Pods-RxSwift+MVVM-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift+MVVM-Demo.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift+MVVM-Demo/Pods-RxSwift+MVVM-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		0CC0AA5550A324CB48AF4D0B /* Pods-RxSwift+MVVM-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift+MVVM-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-RxSwift+MVVM-DemoTests/Pods-RxSwift+MVVM-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		4982C983249354D5001343C1 /* Stub.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Stub.bundle; sourceTree = "<group>"; };
+		4982C985249360CA001343C1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4982C9872493620A001343C1 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		4982C989249364B8001343C1 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		4982C98B24936BC8001343C1 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		49E517062492898F00DF99A4 /* RxSwift+MVVM-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift+MVVM-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E517092492898F00DF99A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49E5170B2492898F00DF99A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				49E517332492910B00DF99A4 /* ListViewModel.swift */,
+				4982C9872493620A001343C1 /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -187,6 +196,7 @@
 				49E517362492921500DF99A4 /* User.swift */,
 				49F02E812492F4650030731A /* ListSection.swift */,
 				49F02E862492F8B00030731A /* GitHubError.swift */,
+				4982C989249364B8001343C1 /* UserDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				49E5170D2492898F00DF99A4 /* ListViewController.swift */,
+				4982C985249360CA001343C1 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 			children = (
 				49F02E842492F52C0030731A /* UserTableViewCell.swift */,
 				49F02E8B2492FD6A0030731A /* StaffBadgeView.swift */,
+				4982C98B24936BC8001343C1 /* UserDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -415,6 +427,7 @@
 				49E5170E2492898F00DF99A4 /* ListViewController.swift in Sources */,
 				49E5170A2492898F00DF99A4 /* AppDelegate.swift in Sources */,
 				49F02E8A2492F8F30030731A /* UIViewController+Alert.swift in Sources */,
+				4982C98C24936BC8001343C1 /* UserDetailView.swift in Sources */,
 				49F02E8C2492FD6A0030731A /* StaffBadgeView.swift in Sources */,
 				49E517342492910B00DF99A4 /* ListViewModel.swift in Sources */,
 				49E5172E24928EC200DF99A4 /* GitHub.swift in Sources */,
@@ -424,6 +437,9 @@
 				49E5170C2492898F00DF99A4 /* SceneDelegate.swift in Sources */,
 				49E517372492921500DF99A4 /* User.swift in Sources */,
 				49F02E822492F4650030731A /* ListSection.swift in Sources */,
+				4982C98A249364B8001343C1 /* UserDetail.swift in Sources */,
+				4982C9882493620A001343C1 /* DetailViewModel.swift in Sources */,
+				4982C986249360CA001343C1 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,13 +28,11 @@ class ListViewController: UIViewController {
     return refreshControl
   }()
 
-  private let dataSource = RxTableViewSectionedReloadDataSource<ListSection>(
-    configureCell: {  (dataSource, tableView, indexPath, user) -> UITableViewCell in
-      let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell") as? UserTableViewCell ?? UserTableViewCell(style: .default, reuseIdentifier: "UserCell")
-      cell.configure(with: user)
-      return cell
-    }
-  )
+  private let dataSource = RxTableViewSectionedReloadDataSource<ListSection>(configureCell: {  (dataSource, tableView, indexPath, user) -> UITableViewCell in
+    let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell") as? UserTableViewCell ?? UserTableViewCell(style: .default, reuseIdentifier: "UserCell")
+    cell.configure(with: user)
+    return cell
+  })
 
   // MARK: - Life Cycle
 
@@ -86,5 +84,15 @@ class ListViewController: UIViewController {
           self?.showErrorAlert(with: error.localizedDescription)
         }
     }).disposed(by: disposeBag)
+
+    tableView.rx.modelSelected(User.self)
+      .subscribe(onNext: { [weak self] (user) in
+        let controller = DetailViewController(user: user)
+        self?.navigationController?.pushViewController(controller, animated: true)
+    }).disposed(by: disposeBag)
+
+    tableView.rx.itemSelected
+      .subscribe(onNext: { self.tableView.deselectRow(at: $0, animated: true)} )
+      .disposed(by: disposeBag)
   }
 }

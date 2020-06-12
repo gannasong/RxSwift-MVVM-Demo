@@ -10,6 +10,7 @@ import Moya
 
 enum GitHub {
   case getUserList(since: Int, pageSize: Int)
+  case getUserDetail(login: String)
 }
 
 extension GitHub: TargetType {
@@ -22,6 +23,8 @@ extension GitHub: TargetType {
     switch self {
       case .getUserList:
         return "/users"
+      case let .getUserDetail(login):
+        return "/users/\(login)"
     }
   }
 
@@ -33,8 +36,8 @@ extension GitHub: TargetType {
     switch self {
       case let .getUserList(since, pageSize):
         return .requestParameters(parameters: [ "since": since, "per_page": pageSize ], encoding: URLEncoding.default)
-//      default:
-//        return .requestPlain
+      case .getUserDetail:
+        return .requestPlain
     }
   }
 
@@ -42,6 +45,8 @@ extension GitHub: TargetType {
     switch self {
       case .getUserList:
         return stubbedResponse("List")
+      case .getUserDetail:
+        return stubbedResponse("UserDetail")
     }
   }
 
