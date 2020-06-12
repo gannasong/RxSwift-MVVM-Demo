@@ -41,5 +41,9 @@ cd RxSwift-MVVM-Demo
 pod install
 ```
 
+## References
+* [Testing Your RxSwift Code](https://www.raywenderlich.com/7408-testing-your-rxswift-code)
+* [RxSwift Documentation](https://beeth0ven.github.io/RxSwift-Chinese-Documentation/)
+
 ## License
 MIT License. See [LICENSE](https://github.com/gannasong/RxSwift-MVVM-Demo/blob/master/LICENSE).
