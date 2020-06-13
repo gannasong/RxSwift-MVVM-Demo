@@ -1,6 +1,8 @@
 # RxSwift-MVVM-Demo
-
 <p align="center">
+    <a href="http://cocoadocs.org/docsets/Cards">
+        <img src="https://app.bitrise.io/app/2960754cdcd66a9d/status.svg?token=YV_vmuKusq9h9o1ledtaFA&branch=master"
+            alt="Bitrise"></a>
     <a href="http://cocoadocs.org/docsets/Cards">
         <img src="https://img.shields.io/badge/Swift-5-orange.svg?style=flat"
             alt="Swift"></a>
@@ -32,6 +34,11 @@
 #### Testing
 - [X] RxTest
 - [ ] RxBlocking
+
+#### CI/CD
+- [X] Bitrise
+- [X] Fastlane
+- [X] Slack
 
 ## Building
 
